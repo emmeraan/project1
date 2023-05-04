@@ -5,10 +5,10 @@ import { LoginService } from './login.service';
 export class LoginController {
   constructor(private readonly loginService: LoginService) {}
 
-//   @Post('Login')
-//   loginUser(): string {
-//     return this.loginService.createUser();
-//   }
+  @Post('Login')
+  loginUser(): void {
+   // return this.loginService.createUser();
+  }
   @Get('Login')
   DiplayUser() {
     return this.loginService.findAll()
