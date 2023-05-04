@@ -11,7 +11,7 @@ export class LoginController {
 //   }
   @Get('Login')
   DiplayUser() {
-    //return this.loginService.findAll()
+    return this.loginService.findAll()
   }
 //   @Get('All')
 //   Users(): string {
